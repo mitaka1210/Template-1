@@ -17,7 +17,7 @@ function style() {
     .pipe(sass(sassOptions).on("error", sass.logError))
     .pipe(sourcemaps.write())
     .pipe(autoprefixer())
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./docs/css"))
     .pipe(browserSync.stream());
 }
 
