@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./docs/css/style.css">
     <!--<link rel="stylesheet" href="css/accordingMenu.css" />-->
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
 
-      <nav class="main-nav">
-        <ul class="nav__list">
-          <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__list-item">
-            <a href="" class="nav__link">About</a>
+        <!--<nav>
+            <div class="logo">
+                <h4>The NAV</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Our Project</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>-->
+
+        <nav class="main-nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__list-item">
+                    <a href="#About " class=" nav__link">About</a>
+                </li>
+                <!--<li class="nav__list-item">
+                    <a href=# " class="section4 nav__link ">Another page</a>
+                </li>-->
+                <li class="nav__list-item ">
+                    <a href="# " class="nav__link ">Pricing</a>
+                </li>
+                <li class="nav__list-item "><a href="# " class="nav__link ">Blog</a></li>
+            </ul>
+
+            <div class="burger ">
+                <div class="line1 "></div>
+                <div class="line2 "></div>
+                <div class="line3 "></div>
+            </div>
+        </nav>
+        <!--<nav class="account ">
+        <ul class="nav__list ">
+          <li class="nav__list-item ">
+            <a class="nav__link nav__link--btn " href="# ">Login</a>
           </li>
-          <li class="nav__list-item">
-            <a href="#" class="nav__link">Another page</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#" class="nav__link">Pricing</a>
-          </li>
-          <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
-        </ul>
-      </nav>
-      <!--<nav class="account">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="nav__link nav__link--btn" href="#">Login</a>
-          </li>
-          <li class="nav__list-item">
+          <li class="nav__list-item ">
             <a
-              class="nav__link nav__link--btn nav__link--btn--highlight"
-              href="#"
+              class="nav__link nav__link--btn nav__link--btn--highlight "
+              href="# "
               >Join</a
             >
           </li>
@@ -48,174 +70,116 @@
     </header>
 
     <main>
-      <section class="home-intro">
-        <div class="main-logo">
-        <svg class="logo" width="924" height="143" viewBox="0 0 924 143" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="924" height="143" fill="black">
-          <rect fill="white" width="924" height="143"/>
-          <path d="M17.8912 71.425V114.159H5V5H41.0551C51.753 5 60.1233 8.04885 66.1661 14.1466C72.2536 20.2443 75.2974 28.3162 75.2974 38.3625C75.2974 48.9585 72.3208 57.1304 66.3675 62.8782C60.459 68.5761 51.9768 71.425 40.9208 71.425H17.8912ZM17.8912 59.6545H41.0551C47.9483 59.6545 53.2301 57.8551 56.9005 54.2565C60.5709 50.6079 62.4062 45.3598 62.4062 38.5124C62.4062 32.0148 60.5709 26.8168 56.9005 22.9183C53.2301 19.0197 48.1945 16.9955 41.7937 16.8455H17.8912V59.6545Z"/>
-          <path d="M133.845 114.159C133.129 112.56 132.547 109.711 132.099 105.612C126.325 112.31 119.432 115.658 111.42 115.658C104.258 115.658 98.3717 113.409 93.7613 108.911C89.1957 104.363 86.9129 98.6148 86.9129 91.6674C86.9129 83.2206 89.7776 76.6731 95.507 72.0248C101.281 67.3266 109.383 64.9775 119.812 64.9775H131.898V58.6049C131.898 53.7567 130.6 49.9081 128.004 47.0592C125.407 44.1603 121.58 42.7108 116.522 42.7108C112.091 42.7108 108.376 43.9604 105.377 46.4594C102.378 48.9585 100.878 51.9823 100.878 55.531H88.39C88.39 51.4825 89.6657 47.584 92.2171 43.8354C94.8132 40.0368 98.3046 37.038 102.691 34.8388C107.123 32.6396 111.979 31.54 117.261 31.54C125.631 31.54 132.189 33.8891 136.933 38.5874C141.678 43.2356 144.14 49.6582 144.319 57.8551V95.1911C144.319 102.638 145.169 108.561 146.87 112.959V114.159H133.845ZM113.232 103.588C117.127 103.588 120.819 102.463 124.311 100.214C127.802 97.9651 130.331 95.0412 131.898 91.4425V74.7988H122.162C106.943 74.7988 99.3341 79.7719 99.3341 89.7182C99.3341 94.0665 100.632 97.4652 103.228 99.9143C105.824 102.363 109.159 103.588 113.232 103.588Z"/>
-          <path d="M163.186 102.838L167.483 96.9155C172.317 89.9181 175.07 79.422 175.741 65.4273L176.883 33.0395H223.681V102.838H233.013V138H220.592V114.159H169.9V138H157.479L157.546 102.838H163.186ZM177.89 102.838H211.259V45.8596H188.901L188.163 65.2024C187.402 81.3463 183.977 93.8916 177.89 102.838Z"/>
-          <path d="M269.404 79.597H260.34V114.159H247.852V33.0395H260.34V67.3766H268.464L292.904 33.0395H307.943L279.207 72.0248L310.36 114.159H294.582L269.404 79.597Z"/>
-          <path d="M365.887 114.159C365.17 112.56 364.589 109.711 364.141 105.612C358.367 112.31 351.474 115.658 343.461 115.658C336.3 115.658 330.413 113.409 325.803 108.911C321.237 104.363 318.955 98.6148 318.955 91.6674C318.955 83.2206 321.819 76.6731 327.549 72.0248C333.323 67.3266 341.425 64.9775 351.854 64.9775H363.94V58.6049C363.94 53.7567 362.641 49.9081 360.045 47.0592C357.449 44.1603 353.622 42.7108 348.564 42.7108C344.133 42.7108 340.418 43.9604 337.419 46.4594C334.42 48.9585 332.92 51.9823 332.92 55.531H320.432C320.432 51.4825 321.707 47.584 324.259 43.8354C326.855 40.0368 330.346 37.038 334.733 34.8388C339.164 32.6396 344.021 31.54 349.303 31.54C357.673 31.54 364.231 33.8891 368.975 38.5874C373.72 43.2356 376.182 49.6582 376.361 57.8551V95.1911C376.361 102.638 377.211 108.561 378.912 112.959V114.159H365.887ZM345.274 103.588C349.168 103.588 352.861 102.463 356.353 100.214C359.844 97.9651 362.373 95.0412 363.94 91.4425V74.7988H354.204C338.985 74.7988 331.376 79.7719 331.376 89.7182C331.376 94.0665 332.674 97.4652 335.27 99.9143C337.866 102.363 341.201 103.588 345.274 103.588Z"/>
-          <path d="M448.538 5L480.498 94.0665L512.457 5H529.175V114.159H516.284V71.6499L517.493 25.7672L485.399 114.159H475.529L443.502 25.9921L444.778 71.6499V114.159H431.887V5H448.538Z"/>
-          <path d="M594.84 114.159C594.124 112.56 593.542 109.711 593.094 105.612C587.32 112.31 580.427 115.658 572.415 115.658C565.253 115.658 559.367 113.409 554.756 108.911C550.191 104.363 547.908 98.6148 547.908 91.6674C547.908 83.2206 550.773 76.6731 556.502 72.0248C562.276 67.3266 570.378 64.9775 580.807 64.9775H592.893V58.6049C592.893 53.7567 591.595 49.9081 588.999 47.0592C586.402 44.1603 582.575 42.7108 577.517 42.7108C573.086 42.7108 569.371 43.9604 566.372 46.4594C563.373 48.9585 561.873 51.9823 561.873 55.531H549.385C549.385 51.4825 550.661 47.584 553.212 43.8354C555.808 40.0368 559.3 37.038 563.686 34.8388C568.117 32.6396 572.974 31.54 578.256 31.54C586.626 31.54 593.184 33.8891 597.928 38.5874C602.673 43.2356 605.135 49.6582 605.314 57.8551V95.1911C605.314 102.638 606.164 108.561 607.865 112.959V114.159H594.84ZM574.227 103.588C578.122 103.588 581.814 102.463 585.306 100.214C588.797 97.9651 591.326 95.0412 592.893 91.4425V74.7988H583.157C567.938 74.7988 560.329 79.7719 560.329 89.7182C560.329 94.0665 561.627 97.4652 564.223 99.9143C566.819 102.363 570.154 103.588 574.227 103.588Z"/>
-          <path d="M684.138 114.159H671.717V79.522H638.348V114.159H625.859V33.0395H638.348V68.2012H671.717V33.0395H684.138V114.159Z"/>
-          <path d="M700.857 72.8495C700.857 64.9025 702.244 57.7552 705.019 51.4076C707.839 45.0599 711.734 40.1618 716.702 36.7131C721.715 33.2644 727.422 31.54 733.823 31.54C743.715 31.54 751.705 35.3636 757.793 43.0107C763.925 50.6578 766.991 60.829 766.991 73.5242V74.4989C766.991 82.3959 765.626 89.4932 762.896 95.7909C760.21 102.039 756.338 106.912 751.28 110.41C746.267 113.909 740.493 115.658 733.957 115.658C724.11 115.658 716.12 111.835 709.988 104.188C703.9 96.5406 700.857 86.4194 700.857 73.8241V72.8495ZM713.345 74.4989C713.345 83.4955 715.203 90.7178 718.918 96.1657C722.678 101.614 727.691 104.338 733.957 104.338C740.269 104.338 745.282 101.589 748.997 96.0908C752.712 90.5428 754.57 82.7958 754.57 72.8495C754.57 63.9528 752.668 56.7555 748.863 51.2576C745.103 45.7097 740.09 42.9357 733.823 42.9357C727.691 42.9357 722.745 45.6597 718.985 51.1077C715.225 56.5556 713.345 64.3527 713.345 74.4989Z"/>
-          <path d="M783.709 114.159V33.0395H812.043C821.712 33.0395 829.12 34.9387 834.267 38.7373C839.46 42.4859 842.056 48.0088 842.056 55.3061C842.056 59.0547 841.048 62.4534 839.034 65.5023C837.02 68.5011 834.043 70.8003 830.104 72.3997C834.491 73.5492 838.005 75.7984 840.646 79.1471C843.331 82.4959 844.674 86.4944 844.674 91.1426C844.674 98.5898 842.212 104.288 837.289 108.236C832.41 112.185 825.494 114.159 816.542 114.159H783.709ZM796.131 78.5474V102.988H816.676C821.868 102.988 825.74 101.914 828.292 99.7644C830.888 97.6152 832.186 94.5913 832.186 90.6928C832.186 82.5958 826.859 78.5474 816.206 78.5474H796.131ZM796.131 67.4515H812.178C823.815 67.4515 829.634 63.653 829.634 56.0558C829.634 48.4587 824.129 44.5351 813.118 44.2852H796.131V67.4515Z"/>
-          <path d="M905.975 114.159C905.258 112.56 904.676 109.711 904.229 105.612C898.455 112.31 891.561 115.658 883.549 115.658C876.387 115.658 870.501 113.409 865.891 108.911C861.325 104.363 859.042 98.6148 859.042 91.6674C859.042 83.2206 861.907 76.6731 867.637 72.0248C873.411 67.3266 881.513 64.9775 891.942 64.9775H904.027V58.6049C904.027 53.7567 902.729 49.9081 900.133 47.0592C897.537 44.1603 893.71 42.7108 888.652 42.7108C884.221 42.7108 880.505 43.9604 877.506 46.4594C874.507 48.9585 873.008 51.9823 873.008 55.531H860.52C860.52 51.4825 861.795 47.584 864.347 43.8354C866.943 40.0368 870.434 37.038 874.821 34.8388C879.252 32.6396 884.109 31.54 889.391 31.54C897.761 31.54 904.318 33.8891 909.063 38.5874C913.808 43.2356 916.27 49.6582 916.449 57.8551V95.1911C916.449 102.638 917.299 108.561 919 112.959V114.159H905.975ZM885.362 103.588C889.256 103.588 892.949 102.463 896.44 100.214C899.932 97.9651 902.461 95.0412 904.027 91.4425V74.7988H894.292C879.073 74.7988 871.464 79.7719 871.464 89.7182C871.464 94.0665 872.762 97.4652 875.358 99.9143C877.954 102.363 881.289 103.588 885.362 103.588Z"/>
-          </mask>
-          <path d="M17.8912 71.425V114.159H5V5H41.0551C51.753 5 60.1233 8.04885 66.1661 14.1466C72.2536 20.2443 75.2974 28.3162 75.2974 38.3625C75.2974 48.9585 72.3208 57.1304 66.3675 62.8782C60.459 68.5761 51.9768 71.425 40.9208 71.425H17.8912ZM17.8912 59.6545H41.0551C47.9483 59.6545 53.2301 57.8551 56.9005 54.2565C60.5709 50.6079 62.4062 45.3598 62.4062 38.5124C62.4062 32.0148 60.5709 26.8168 56.9005 22.9183C53.2301 19.0197 48.1945 16.9955 41.7937 16.8455H17.8912V59.6545Z" fill="#FFFBFB"/>
-          <path d="M133.845 114.159C133.129 112.56 132.547 109.711 132.099 105.612C126.325 112.31 119.432 115.658 111.42 115.658C104.258 115.658 98.3717 113.409 93.7613 108.911C89.1957 104.363 86.9129 98.6148 86.9129 91.6674C86.9129 83.2206 89.7776 76.6731 95.507 72.0248C101.281 67.3266 109.383 64.9775 119.812 64.9775H131.898V58.6049C131.898 53.7567 130.6 49.9081 128.004 47.0592C125.407 44.1603 121.58 42.7108 116.522 42.7108C112.091 42.7108 108.376 43.9604 105.377 46.4594C102.378 48.9585 100.878 51.9823 100.878 55.531H88.39C88.39 51.4825 89.6657 47.584 92.2171 43.8354C94.8132 40.0368 98.3046 37.038 102.691 34.8388C107.123 32.6396 111.979 31.54 117.261 31.54C125.631 31.54 132.189 33.8891 136.933 38.5874C141.678 43.2356 144.14 49.6582 144.319 57.8551V95.1911C144.319 102.638 145.169 108.561 146.87 112.959V114.159H133.845ZM113.232 103.588C117.127 103.588 120.819 102.463 124.311 100.214C127.802 97.9651 130.331 95.0412 131.898 91.4425V74.7988H122.162C106.943 74.7988 99.3341 79.7719 99.3341 89.7182C99.3341 94.0665 100.632 97.4652 103.228 99.9143C105.824 102.363 109.159 103.588 113.232 103.588Z" fill="#FFFBFB"/>
-          <path d="M163.186 102.838L167.483 96.9155C172.317 89.9181 175.07 79.422 175.741 65.4273L176.883 33.0395H223.681V102.838H233.013V138H220.592V114.159H169.9V138H157.479L157.546 102.838H163.186ZM177.89 102.838H211.259V45.8596H188.901L188.163 65.2024C187.402 81.3463 183.977 93.8916 177.89 102.838Z" fill="#FFFBFB"/>
-          <path d="M269.404 79.597H260.34V114.159H247.852V33.0395H260.34V67.3766H268.464L292.904 33.0395H307.943L279.207 72.0248L310.36 114.159H294.582L269.404 79.597Z" fill="#FFFBFB"/>
-          <path d="M365.887 114.159C365.17 112.56 364.589 109.711 364.141 105.612C358.367 112.31 351.474 115.658 343.461 115.658C336.3 115.658 330.413 113.409 325.803 108.911C321.237 104.363 318.955 98.6148 318.955 91.6674C318.955 83.2206 321.819 76.6731 327.549 72.0248C333.323 67.3266 341.425 64.9775 351.854 64.9775H363.94V58.6049C363.94 53.7567 362.641 49.9081 360.045 47.0592C357.449 44.1603 353.622 42.7108 348.564 42.7108C344.133 42.7108 340.418 43.9604 337.419 46.4594C334.42 48.9585 332.92 51.9823 332.92 55.531H320.432C320.432 51.4825 321.707 47.584 324.259 43.8354C326.855 40.0368 330.346 37.038 334.733 34.8388C339.164 32.6396 344.021 31.54 349.303 31.54C357.673 31.54 364.231 33.8891 368.975 38.5874C373.72 43.2356 376.182 49.6582 376.361 57.8551V95.1911C376.361 102.638 377.211 108.561 378.912 112.959V114.159H365.887ZM345.274 103.588C349.168 103.588 352.861 102.463 356.353 100.214C359.844 97.9651 362.373 95.0412 363.94 91.4425V74.7988H354.204C338.985 74.7988 331.376 79.7719 331.376 89.7182C331.376 94.0665 332.674 97.4652 335.27 99.9143C337.866 102.363 341.201 103.588 345.274 103.588Z" fill="#FFFBFB"/>
-          <path d="M448.538 5L480.498 94.0665L512.457 5H529.175V114.159H516.284V71.6499L517.493 25.7672L485.399 114.159H475.529L443.502 25.9921L444.778 71.6499V114.159H431.887V5H448.538Z" fill="#FFFBFB"/>
-          <path d="M594.84 114.159C594.124 112.56 593.542 109.711 593.094 105.612C587.32 112.31 580.427 115.658 572.415 115.658C565.253 115.658 559.367 113.409 554.756 108.911C550.191 104.363 547.908 98.6148 547.908 91.6674C547.908 83.2206 550.773 76.6731 556.502 72.0248C562.276 67.3266 570.378 64.9775 580.807 64.9775H592.893V58.6049C592.893 53.7567 591.595 49.9081 588.999 47.0592C586.402 44.1603 582.575 42.7108 577.517 42.7108C573.086 42.7108 569.371 43.9604 566.372 46.4594C563.373 48.9585 561.873 51.9823 561.873 55.531H549.385C549.385 51.4825 550.661 47.584 553.212 43.8354C555.808 40.0368 559.3 37.038 563.686 34.8388C568.117 32.6396 572.974 31.54 578.256 31.54C586.626 31.54 593.184 33.8891 597.928 38.5874C602.673 43.2356 605.135 49.6582 605.314 57.8551V95.1911C605.314 102.638 606.164 108.561 607.865 112.959V114.159H594.84ZM574.227 103.588C578.122 103.588 581.814 102.463 585.306 100.214C588.797 97.9651 591.326 95.0412 592.893 91.4425V74.7988H583.157C567.938 74.7988 560.329 79.7719 560.329 89.7182C560.329 94.0665 561.627 97.4652 564.223 99.9143C566.819 102.363 570.154 103.588 574.227 103.588Z" fill="#FFFBFB"/>
-          <path d="M684.138 114.159H671.717V79.522H638.348V114.159H625.859V33.0395H638.348V68.2012H671.717V33.0395H684.138V114.159Z" fill="#FFFBFB"/>
-          <path d="M700.857 72.8495C700.857 64.9025 702.244 57.7552 705.019 51.4076C707.839 45.0599 711.734 40.1618 716.702 36.7131C721.715 33.2644 727.422 31.54 733.823 31.54C743.715 31.54 751.705 35.3636 757.793 43.0107C763.925 50.6578 766.991 60.829 766.991 73.5242V74.4989C766.991 82.3959 765.626 89.4932 762.896 95.7909C760.21 102.039 756.338 106.912 751.28 110.41C746.267 113.909 740.493 115.658 733.957 115.658C724.11 115.658 716.12 111.835 709.988 104.188C703.9 96.5406 700.857 86.4194 700.857 73.8241V72.8495ZM713.345 74.4989C713.345 83.4955 715.203 90.7178 718.918 96.1657C722.678 101.614 727.691 104.338 733.957 104.338C740.269 104.338 745.282 101.589 748.997 96.0908C752.712 90.5428 754.57 82.7958 754.57 72.8495C754.57 63.9528 752.668 56.7555 748.863 51.2576C745.103 45.7097 740.09 42.9357 733.823 42.9357C727.691 42.9357 722.745 45.6597 718.985 51.1077C715.225 56.5556 713.345 64.3527 713.345 74.4989Z" fill="#FFFBFB"/>
-          <path d="M783.709 114.159V33.0395H812.043C821.712 33.0395 829.12 34.9387 834.267 38.7373C839.46 42.4859 842.056 48.0088 842.056 55.3061C842.056 59.0547 841.048 62.4534 839.034 65.5023C837.02 68.5011 834.043 70.8003 830.104 72.3997C834.491 73.5492 838.005 75.7984 840.646 79.1471C843.331 82.4959 844.674 86.4944 844.674 91.1426C844.674 98.5898 842.212 104.288 837.289 108.236C832.41 112.185 825.494 114.159 816.542 114.159H783.709ZM796.131 78.5474V102.988H816.676C821.868 102.988 825.74 101.914 828.292 99.7644C830.888 97.6152 832.186 94.5913 832.186 90.6928C832.186 82.5958 826.859 78.5474 816.206 78.5474H796.131ZM796.131 67.4515H812.178C823.815 67.4515 829.634 63.653 829.634 56.0558C829.634 48.4587 824.129 44.5351 813.118 44.2852H796.131V67.4515Z" fill="#FFFBFB"/>
-          <path d="M905.975 114.159C905.258 112.56 904.676 109.711 904.229 105.612C898.455 112.31 891.561 115.658 883.549 115.658C876.387 115.658 870.501 113.409 865.891 108.911C861.325 104.363 859.042 98.6148 859.042 91.6674C859.042 83.2206 861.907 76.6731 867.637 72.0248C873.411 67.3266 881.513 64.9775 891.942 64.9775H904.027V58.6049C904.027 53.7567 902.729 49.9081 900.133 47.0592C897.537 44.1603 893.71 42.7108 888.652 42.7108C884.221 42.7108 880.505 43.9604 877.506 46.4594C874.507 48.9585 873.008 51.9823 873.008 55.531H860.52C860.52 51.4825 861.795 47.584 864.347 43.8354C866.943 40.0368 870.434 37.038 874.821 34.8388C879.252 32.6396 884.109 31.54 889.391 31.54C897.761 31.54 904.318 33.8891 909.063 38.5874C913.808 43.2356 916.27 49.6582 916.449 57.8551V95.1911C916.449 102.638 917.299 108.561 919 112.959V114.159H905.975ZM885.362 103.588C889.256 103.588 892.949 102.463 896.44 100.214C899.932 97.9651 902.461 95.0412 904.027 91.4425V74.7988H894.292C879.073 74.7988 871.464 79.7719 871.464 89.7182C871.464 94.0665 872.762 97.4652 875.358 99.9143C877.954 102.363 881.289 103.588 885.362 103.588Z" fill="#FFFBFB"/>
-          <path d="M17.8912 71.425V114.159H5V5H41.0551C51.753 5 60.1233 8.04885 66.1661 14.1466C72.2536 20.2443 75.2974 28.3162 75.2974 38.3625C75.2974 48.9585 72.3208 57.1304 66.3675 62.8782C60.459 68.5761 51.9768 71.425 40.9208 71.425H17.8912ZM17.8912 59.6545H41.0551C47.9483 59.6545 53.2301 57.8551 56.9005 54.2565C60.5709 50.6079 62.4062 45.3598 62.4062 38.5124C62.4062 32.0148 60.5709 26.8168 56.9005 22.9183C53.2301 19.0197 48.1945 16.9955 41.7937 16.8455H17.8912V59.6545Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M133.845 114.159C133.129 112.56 132.547 109.711 132.099 105.612C126.325 112.31 119.432 115.658 111.42 115.658C104.258 115.658 98.3717 113.409 93.7613 108.911C89.1957 104.363 86.9129 98.6148 86.9129 91.6674C86.9129 83.2206 89.7776 76.6731 95.507 72.0248C101.281 67.3266 109.383 64.9775 119.812 64.9775H131.898V58.6049C131.898 53.7567 130.6 49.9081 128.004 47.0592C125.407 44.1603 121.58 42.7108 116.522 42.7108C112.091 42.7108 108.376 43.9604 105.377 46.4594C102.378 48.9585 100.878 51.9823 100.878 55.531H88.39C88.39 51.4825 89.6657 47.584 92.2171 43.8354C94.8132 40.0368 98.3046 37.038 102.691 34.8388C107.123 32.6396 111.979 31.54 117.261 31.54C125.631 31.54 132.189 33.8891 136.933 38.5874C141.678 43.2356 144.14 49.6582 144.319 57.8551V95.1911C144.319 102.638 145.169 108.561 146.87 112.959V114.159H133.845ZM113.232 103.588C117.127 103.588 120.819 102.463 124.311 100.214C127.802 97.9651 130.331 95.0412 131.898 91.4425V74.7988H122.162C106.943 74.7988 99.3341 79.7719 99.3341 89.7182C99.3341 94.0665 100.632 97.4652 103.228 99.9143C105.824 102.363 109.159 103.588 113.232 103.588Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M163.186 102.838L167.483 96.9155C172.317 89.9181 175.07 79.422 175.741 65.4273L176.883 33.0395H223.681V102.838H233.013V138H220.592V114.159H169.9V138H157.479L157.546 102.838H163.186ZM177.89 102.838H211.259V45.8596H188.901L188.163 65.2024C187.402 81.3463 183.977 93.8916 177.89 102.838Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M269.404 79.597H260.34V114.159H247.852V33.0395H260.34V67.3766H268.464L292.904 33.0395H307.943L279.207 72.0248L310.36 114.159H294.582L269.404 79.597Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M365.887 114.159C365.17 112.56 364.589 109.711 364.141 105.612C358.367 112.31 351.474 115.658 343.461 115.658C336.3 115.658 330.413 113.409 325.803 108.911C321.237 104.363 318.955 98.6148 318.955 91.6674C318.955 83.2206 321.819 76.6731 327.549 72.0248C333.323 67.3266 341.425 64.9775 351.854 64.9775H363.94V58.6049C363.94 53.7567 362.641 49.9081 360.045 47.0592C357.449 44.1603 353.622 42.7108 348.564 42.7108C344.133 42.7108 340.418 43.9604 337.419 46.4594C334.42 48.9585 332.92 51.9823 332.92 55.531H320.432C320.432 51.4825 321.707 47.584 324.259 43.8354C326.855 40.0368 330.346 37.038 334.733 34.8388C339.164 32.6396 344.021 31.54 349.303 31.54C357.673 31.54 364.231 33.8891 368.975 38.5874C373.72 43.2356 376.182 49.6582 376.361 57.8551V95.1911C376.361 102.638 377.211 108.561 378.912 112.959V114.159H365.887ZM345.274 103.588C349.168 103.588 352.861 102.463 356.353 100.214C359.844 97.9651 362.373 95.0412 363.94 91.4425V74.7988H354.204C338.985 74.7988 331.376 79.7719 331.376 89.7182C331.376 94.0665 332.674 97.4652 335.27 99.9143C337.866 102.363 341.201 103.588 345.274 103.588Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M448.538 5L480.498 94.0665L512.457 5H529.175V114.159H516.284V71.6499L517.493 25.7672L485.399 114.159H475.529L443.502 25.9921L444.778 71.6499V114.159H431.887V5H448.538Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M594.84 114.159C594.124 112.56 593.542 109.711 593.094 105.612C587.32 112.31 580.427 115.658 572.415 115.658C565.253 115.658 559.367 113.409 554.756 108.911C550.191 104.363 547.908 98.6148 547.908 91.6674C547.908 83.2206 550.773 76.6731 556.502 72.0248C562.276 67.3266 570.378 64.9775 580.807 64.9775H592.893V58.6049C592.893 53.7567 591.595 49.9081 588.999 47.0592C586.402 44.1603 582.575 42.7108 577.517 42.7108C573.086 42.7108 569.371 43.9604 566.372 46.4594C563.373 48.9585 561.873 51.9823 561.873 55.531H549.385C549.385 51.4825 550.661 47.584 553.212 43.8354C555.808 40.0368 559.3 37.038 563.686 34.8388C568.117 32.6396 572.974 31.54 578.256 31.54C586.626 31.54 593.184 33.8891 597.928 38.5874C602.673 43.2356 605.135 49.6582 605.314 57.8551V95.1911C605.314 102.638 606.164 108.561 607.865 112.959V114.159H594.84ZM574.227 103.588C578.122 103.588 581.814 102.463 585.306 100.214C588.797 97.9651 591.326 95.0412 592.893 91.4425V74.7988H583.157C567.938 74.7988 560.329 79.7719 560.329 89.7182C560.329 94.0665 561.627 97.4652 564.223 99.9143C566.819 102.363 570.154 103.588 574.227 103.588Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M684.138 114.159H671.717V79.522H638.348V114.159H625.859V33.0395H638.348V68.2012H671.717V33.0395H684.138V114.159Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M700.857 72.8495C700.857 64.9025 702.244 57.7552 705.019 51.4076C707.839 45.0599 711.734 40.1618 716.702 36.7131C721.715 33.2644 727.422 31.54 733.823 31.54C743.715 31.54 751.705 35.3636 757.793 43.0107C763.925 50.6578 766.991 60.829 766.991 73.5242V74.4989C766.991 82.3959 765.626 89.4932 762.896 95.7909C760.21 102.039 756.338 106.912 751.28 110.41C746.267 113.909 740.493 115.658 733.957 115.658C724.11 115.658 716.12 111.835 709.988 104.188C703.9 96.5406 700.857 86.4194 700.857 73.8241V72.8495ZM713.345 74.4989C713.345 83.4955 715.203 90.7178 718.918 96.1657C722.678 101.614 727.691 104.338 733.957 104.338C740.269 104.338 745.282 101.589 748.997 96.0908C752.712 90.5428 754.57 82.7958 754.57 72.8495C754.57 63.9528 752.668 56.7555 748.863 51.2576C745.103 45.7097 740.09 42.9357 733.823 42.9357C727.691 42.9357 722.745 45.6597 718.985 51.1077C715.225 56.5556 713.345 64.3527 713.345 74.4989Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M783.709 114.159V33.0395H812.043C821.712 33.0395 829.12 34.9387 834.267 38.7373C839.46 42.4859 842.056 48.0088 842.056 55.3061C842.056 59.0547 841.048 62.4534 839.034 65.5023C837.02 68.5011 834.043 70.8003 830.104 72.3997C834.491 73.5492 838.005 75.7984 840.646 79.1471C843.331 82.4959 844.674 86.4944 844.674 91.1426C844.674 98.5898 842.212 104.288 837.289 108.236C832.41 112.185 825.494 114.159 816.542 114.159H783.709ZM796.131 78.5474V102.988H816.676C821.868 102.988 825.74 101.914 828.292 99.7644C830.888 97.6152 832.186 94.5913 832.186 90.6928C832.186 82.5958 826.859 78.5474 816.206 78.5474H796.131ZM796.131 67.4515H812.178C823.815 67.4515 829.634 63.653 829.634 56.0558C829.634 48.4587 824.129 44.5351 813.118 44.2852H796.131V67.4515Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          <path d="M905.975 114.159C905.258 112.56 904.676 109.711 904.229 105.612C898.455 112.31 891.561 115.658 883.549 115.658C876.387 115.658 870.501 113.409 865.891 108.911C861.325 104.363 859.042 98.6148 859.042 91.6674C859.042 83.2206 861.907 76.6731 867.637 72.0248C873.411 67.3266 881.513 64.9775 891.942 64.9775H904.027V58.6049C904.027 53.7567 902.729 49.9081 900.133 47.0592C897.537 44.1603 893.71 42.7108 888.652 42.7108C884.221 42.7108 880.505 43.9604 877.506 46.4594C874.507 48.9585 873.008 51.9823 873.008 55.531H860.52C860.52 51.4825 861.795 47.584 864.347 43.8354C866.943 40.0368 870.434 37.038 874.821 34.8388C879.252 32.6396 884.109 31.54 889.391 31.54C897.761 31.54 904.318 33.8891 909.063 38.5874C913.808 43.2356 916.27 49.6582 916.449 57.8551V95.1911C916.449 102.638 917.299 108.561 919 112.959V114.159H905.975ZM885.362 103.588C889.256 103.588 892.949 102.463 896.44 100.214C899.932 97.9651 902.461 95.0412 904.027 91.4425V74.7988H894.292C879.073 74.7988 871.464 79.7719 871.464 89.7182C871.464 94.0665 872.762 97.4652 875.358 99.9143C877.954 102.363 881.289 103.588 885.362 103.588Z" stroke="#888888" stroke-width="10" mask="url(#path-1-outside-1)"/>
-          </svg>
-        </div>
-          
-          
-          
-      </section>
+        <section class="home-intro ">
+            <div class="sp-container ">
+                <div class="sp-content ">
+                    <div class="sp-globe "> Test</div>
+                    <h2 class="frame-1 ">Marin</h2>
+                    <h2 class="frame-2 ">Manov</h2>
+                    <h2 class="frame-3 ">presents the new revolution in</h2>
+                    <h2 class="frame-4 ">TEST IT!</h2>
+                    <h2 class="frame-5 ">
+                        <span>FORK,</span>
+                        <span>CHANGE,</span>
+                        <span>EXPERIANCE.</span>
+                    </h2>
 
-      <section class="according">
-        <h2>Frequently Asked Questions</h2>
+                </div>
+            </div>
+        </section>
 
-        <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <symbol viewBox="0 0 24 24" id="expand-more">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+        <section class="according ">
+
+            <h2 id="About ">Frequently Asked Questions</h2>
+
+            <div style="visibility: hidden; position: absolute; width: 0px; height: 0px; ">
+                <svg xmlns="http://www.w3.org/2000/svg ">
+            <symbol viewBox="0 0 24 24 " id="expand-more ">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z "/><path d="M0 0h24v24H0z " fill="none "/>
             </symbol>
-            <symbol viewBox="0 0 24 24" id="close">
-              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+            <symbol viewBox="0 0 24 24 " id="close ">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z "/><path d="M0 0h24v24H0z " fill="none "/>
             </symbol>
           </svg>
-        </div>
-        
-        <details open>
-          <summary>
-            Does this product have what I need?
-            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-          </summary>
-          <p>Totally. Totally does.</p>
-        </details>
-        
-        <details>
-        
-          <summary>
-            Can I use it all the time?
-            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-          </summary>
-          <p>Of course you can, we won't stop you.</p>
-        </details>
-        
-        <details>
-          <summary>
-            Are there any restrictions?    
-            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-          </summary>
-          <p>Only your imagination my friend. Go forth!</p>
-        </details>
-      </section>
+            </div>
 
-      <div class="home-more-stuff">
-        <div class="more-stuff-grid">
-          <img
-            src="https://unsplash.it/400"
-            alt=""
-            class="slide-in from-left"
-          />
-          <p class="slide-in from-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-            debitis facilis quibusdam magni. Eveniet.
-          </p>
+            <details open>
+                <summary>
+                    Does this product have what I need?
+                    <svg class="control-icon control-icon-expand " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#expand-more " /></svg>
+                    <svg class="control-icon control-icon-close " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#close " /></svg>
+                </summary>
+                <p>Totally. Totally does.</p>
+            </details>
+
+            <details>
+
+                <summary>
+                    Can I use it all the time?
+                    <svg class="control-icon control-icon-expand " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#expand-more " /></svg>
+                    <svg class="control-icon control-icon-close " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#close " /></svg>
+                </summary>
+                <p>Of course you can, we won't stop you.</p>
+            </details>
+
+            <details>
+                <summary>
+                    Are there any restrictions?
+                    <svg class="control-icon control-icon-expand " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#expand-more " /></svg>
+                    <svg class="control-icon control-icon-close " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#close " /></svg>
+                </summary>
+                <p>Only your imagination my friend. Go forth!</p>
+            </details>
+        </section>
+        <h3 class="section3 ">Какво предлагаме</h3>
+        <div class="home-more-stuff ">
+            <div class="more-stuff-grid ">
+                <img src="https://unsplash.it/400 " alt=" " class="slide-in from-left " />
+                <p class="slide-in from-right ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+            </div>
+            <div class="more-stuff-grid ">
+                <p class="slide-in from-left ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+                <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
+            </div>
+            <div class="more-stuff-grid ">
+                <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
+                <p class="slide-in from-right ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+            </div>
+            <div class="more-stuff-grid ">
+                <p class="slide-in from-left ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+                <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
+            </div>
+            <div class="more-stuff-grid ">
+                <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
+                <p class="slide-in from-right ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+            </div>
+            <div class="more-stuff-grid ">
+                <p class="slide-in from-left ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+                <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
+            </div>
         </div>
-        <div class="more-stuff-grid">
-          <p class="slide-in from-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-            debitis facilis quibusdam magni. Eveniet.
-          </p>
-          <img
-            src="https://unsplash.it/401"
-            alt=""
-            class="slide-in from-right"
-          />
-        </div>
-        <div class="more-stuff-grid">
-          <img src="//unsplash.it/400" alt="" class="slide-in from-left" />
-          <p class="slide-in from-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-            debitis facilis quibusdam magni. Eveniet.
-          </p>
-        </div>
-        <div class="more-stuff-grid">
-          <p class="slide-in from-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-            debitis facilis quibusdam magni. Eveniet.
-          </p>
-          <img
-            src="https://unsplash.it/401"
-            alt=""
-            class="slide-in from-right"
-          />
-        </div>
-        <div class="more-stuff-grid">
-          <img src="//unsplash.it/400" alt="" class="slide-in from-left" />
-          <p class="slide-in from-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-            debitis facilis quibusdam magni. Eveniet.
-          </p>
-        </div>
-        <div class="more-stuff-grid">
-          <p class="slide-in from-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-            debitis facilis quibusdam magni. Eveniet.
-          </p>
-          <img
-            src="https://unsplash.it/401"
-            alt=""
-            class="slide-in from-right"
-          />
-        </div>
-      </div>
     </main>
-    <script src="js/observers.js"></script>
-  </body>
+    <script src="js/observers.js "></script>
+    <script src="./js/app.js "></script>
+
+</body>
+
 </html>
