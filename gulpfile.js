@@ -18,13 +18,14 @@ function style() {
     .pipe(sourcemaps.write())
     .pipe(autoprefixer())
     .pipe(gulp.dest("./docs/css"))
+    //.pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
 }
 
 function watch() {
   browserSync.init({
     server: ".",
-    browser: "firefox"
+    browser: "chrome"
   });
   gulp.watch( '_assets/scss/**/*.scss', style);
   gulp.watch("./*.html").on("change", browserSync.reload);
