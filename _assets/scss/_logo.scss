@@ -53,7 +53,7 @@ p.demos {
     top: 50%;
     line-height: 100px;
     height: 90px;
-    margin-top: -50px;
+    //margin-top: -50px;
     font-size: 40px;
     width: 60%;
     margin-left: 8em;
@@ -376,7 +376,9 @@ p.demos {
 
 @media screen and ( max-width: 500px) {
     .home-intro {
-        width: 24.88em;
+        //margin-left: .2em;
+        width: 24.69em;
+        height: auto;
     }
     .sp-globe {
         width: auto;
@@ -390,11 +392,20 @@ p.demos {
     }
     .sp-container h2.frame-4 {
         display: flex;
-        font-size: 4em;
+        font-size: 1em;
         justify-content: center;
         flex-wrap: wrap;
         width: max-content;
         //margin-left: 2em;
         text-align: center;
+    }
+    .sp-container h2 {
+        position: absolute;
+        left: 1em;
+        top: 7%;
+        line-height: 41px;
+        height: 84px;
+        font-size: 22px;
+        width: 60%;
     }
 }

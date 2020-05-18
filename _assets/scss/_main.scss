@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--main-font-family);
 }
 
 header {
@@ -88,13 +88,22 @@ header {
     box-shadow: 0 3px 20px rgba(black, 0.2);
 }
 
-.home-intro {
-    padding: 70vh 0;
-    background: #123 url(//unsplash.it/900);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: white;
-    text-align: center;
+//.home-intro {
+//    padding: 90vh 0;
+//    //background: url(../../video/coverr-aerial-view-of-rocky-mountains-1585320758193.mp4);
+//    background-size: cover;
+//    background-blend-mode: multiply;
+//    color: white;
+//    text-align: center;
+//}
+#home-video-bg {
+    position: relative;
+    top: 50%;
+    transform: translate(50% -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .home-about {
@@ -216,14 +225,14 @@ header {
     }
     .nav__list {
         position: absolute;
-        right: 5em;
-        height: 92vh;
-        top: 11vh;
+        right: 13em;
+        //height: 92vh;
+        top: 7vh;
         //background-color: #1abc9c;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 99%;
         transform: translateX(100%);
         transition: transform .5s ease-in;
         flex-wrap: wrap;
@@ -234,20 +243,19 @@ header {
     }
     .nav__list a {
         color: #e74c3c;
+        background-color: #1abc9c;
+        width: 17em;
     }
-    .logo {
-        height: 4em;
-        //width: max-content;
-        margin-left: -13em;
-    }
+    //.logo {
+    //    height: 4em;
+    //    //width: max-content;
+    //    margin-left: -13em;
+    //}
     .burger {
         display: block;
         margin-top: 1em;
         margin-left: -5em;
         //background-color: red;
-    }
-    .home-intro {
-        //width: max-content;
     }
     .according h2 {
         display: flex;
@@ -266,7 +274,7 @@ header {
     .from-right,
     .from-left {
         font-size: 1em;
-        padding-left: 2.2em;
+        //padding-left: 2.2em;
     }
     .more-stuff-grid {
         display: flex;
@@ -277,5 +285,6 @@ header {
 @media screen and ( max-width: 768px) {
     .home-intro {
         width: 100%;
+        height: auto;
     }
 }
