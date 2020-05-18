@@ -5,46 +5,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,500;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
     <!--<link rel="stylesheet" href="css/accordingMenu.css" />-->
 </head>
 
 <body>
+
     <header>
+        <div class="wrapHead">
+            <nav class="main-nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#home" class="scroll nav__link">Home</a></li>
+                    <li class="nav__list-item">
+                        <a href="#about" class="scroll nav__link">About</a>
+                    </li>
+                    <!--<li class="nav__list-item">
+                    <a href=# " class="section4 nav__link ">Another page</a>
+                </li>-->
+                    <li class="nav__list-item ">
+                        <a href="#pricing" class="scroll nav__link ">Pricing</a>
+                    </li>
+                    <li class="nav__list-item "><a href="#blog" class="scroll nav__link ">Blog</a></li>
+                </ul>
 
-
-        <nav class="main-nav">
-            <ul class="nav__list">
-                <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__list-item">
-                    <a href="#About " class=" nav__link">About</a>
-                </li>
-
-                <li class="nav__list-item ">
-                    <a href="# " class="nav__link ">Pricing</a>
-                </li>
-                <li class="nav__list-item "><a href="# " class="nav__link ">Blog</a></li>
-            </ul>
-
-            <div class="burger ">
-                <div class="line1 "></div>
-                <div class="line2 "></div>
-                <div class="line3 "></div>
-            </div>
-        </nav>
-
+                <div class="burger ">
+                    <div class="line1 "></div>
+                    <div class="line2 "></div>
+                    <div class="line3 "></div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="home-video">
-            <div class="home">
-                <video src="./video/coverr-aerial-view-of-rocky-mountains-1585320758193.mp4" autoplay></video>
+
+        <section id="home" class="home-intro ">
+            <!--<img src="./img/business-man-2452808.jpg" alt="">-->
+            <div class="VD">
+                <video id="home-video-bg" height="500px" src="./video/coverr-aerial-view-of-rocky-mountains-1585320758193.mp4" autoplay="" loop="" muted=""></video>
             </div>
-        </div>
-        <section class="home-intro ">
+
             <div class="sp-container ">
+
                 <div class="sp-content ">
                     <div class="sp-globe "> Test</div>
                     <h2 class="frame-1 ">Marin</h2>
@@ -61,11 +66,12 @@
             </div>
         </section>
 
-        <section class="according ">
+        <section id="about" class="according ">
 
             <h2 id="About ">Frequently Asked Questions</h2>
 
             <div style="visibility: hidden; position: absolute; width: 0px; height: 0px; ">
+
                 <svg xmlns="http://www.w3.org/2000/svg ">
             <symbol viewBox="0 0 24 24 " id="expand-more ">
               <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z "/><path d="M0 0h24v24H0z " fill="none "/>
@@ -76,7 +82,7 @@
           </svg>
             </div>
 
-            <details open>
+            <details close>
                 <summary>
                     Does this product have what I need?
                     <svg class="control-icon control-icon-expand " width="24 " height="24 " role="presentation "><use xmlns:xlink="http://www.w3.org/1999/xlink " xlink:href="#expand-more " /></svg>
@@ -104,52 +110,62 @@
                 <p>Only your imagination my friend. Go forth!</p>
             </details>
         </section>
-        <h3 class="section3 ">Какво предлагаме</h3>
-        <div class="home-more-stuff ">
-            <div class="more-stuff-grid ">
-                <img src="https://unsplash.it/400 " alt=" " class="slide-in from-left " />
-                <p class="slide-in from-right ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                    cupiditate debitis facilis quibusdam magni. Eveniet.
-                </p>
+
+        <section id="pricing">
+            <h3 class="section3 ">Какво предлагаме</h3>
+            <div class="home-more-stuff ">
+                <div class="more-stuff-grid ">
+                    <img src="https://unsplash.it/400 " alt=" " class="slide-in from-left " />
+                    <p class="slide-in from-right ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                        cupiditate debitis facilis quibusdam magni. Eveniet.
+                    </p>
+                </div>
+                <div class="more-stuff-grid ">
+                    <p class="slide-in from-left ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                        cupiditate debitis facilis quibusdam magni. Eveniet.
+                    </p>
+                    <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
+                </div>
+                <div class="more-stuff-grid ">
+                    <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
+                    <p class="slide-in from-right ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                        cupiditate debitis facilis quibusdam magni. Eveniet.
+                    </p>
+                </div>
+                <div class="more-stuff-grid ">
+                    <p class="slide-in from-left ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                        cupiditate debitis facilis quibusdam magni. Eveniet.
+                    </p>
+                    <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
+                </div>
+                <div class="more-stuff-grid ">
+                    <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
+                    <p class="slide-in from-right ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                        cupiditate debitis facilis quibusdam magni. Eveniet.
+                    </p>
+                </div>
+                <div class="more-stuff-grid ">
+                    <p class="slide-in from-left ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                        cupiditate debitis facilis quibusdam magni. Eveniet.
+                    </p>
+                    <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
+                </div>
             </div>
-            <div class="more-stuff-grid ">
-                <p class="slide-in from-left ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                    cupiditate debitis facilis quibusdam magni. Eveniet.
-                </p>
-                <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
-            </div>
-            <div class="more-stuff-grid ">
-                <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
-                <p class="slide-in from-right ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                    cupiditate debitis facilis quibusdam magni. Eveniet.
-                </p>
-            </div>
-            <div class="more-stuff-grid ">
-                <p class="slide-in from-left ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                    cupiditate debitis facilis quibusdam magni. Eveniet.
-                </p>
-                <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
-            </div>
-            <div class="more-stuff-grid ">
-                <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
-                <p class="slide-in from-right ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                    cupiditate debitis facilis quibusdam magni. Eveniet.
-                </p>
-            </div>
-            <div class="more-stuff-grid ">
-                <p class="slide-in from-left ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                    cupiditate debitis facilis quibusdam magni. Eveniet.
-                </p>
-                <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
-            </div>
-        </div>
     </main>
+    </section>
+    <script>
+        history.scrollRestoration = "manual";
+
+        $(window).on('beforeunload', function() {
+            $(window).scrollTop(0);
+        });
+    </script>
     <script src="js/observers.js "></script>
     <script src="./js/app.js "></script>
 
