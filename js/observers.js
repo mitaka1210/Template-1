@@ -23,7 +23,7 @@ sectionOneObserver.observe(sectionOne);
 
 //! Aвтоматично скорлва до страницата
 
-$(document).ready(function() {
+(document).ready(function() {
     let docEl = $(document),
         headerEl = $('header'),
         headerWrapEl = $('.wrapHead'),
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     docEl.on('scroll', function() {
 
-        if (docEl.scrollTop() > 60) {
+        if (docEl.scrollTop() > 40) {
             headerEl.addClass('fixed-to-top');
             headerWrapEl.addClass('fixed-to-top');
             navEl.addClass('fixed-to-top');

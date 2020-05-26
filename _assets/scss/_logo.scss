@@ -87,7 +87,7 @@ p.demos {
 }
 
 .sp-container h2.frame-4 {
-    font-size: 100px;
+    font-size: 60px;
     -webkit-animation-delay: 9s;
     -moz-animation-delay: 9s;
     -ms-animation-delay: 9s;
@@ -129,13 +129,13 @@ p.demos {
 
 .sp-globe {
     position: absolute;
-    background-color: red;
+    color: yellow;
     width: 270px;
     height: 273px;
     left: 50%;
     top: 50%;
     margin: -137px 0 0 -141px;
-    background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+    //background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
     -webkit-animation: fadeInBack 3.6s linear 14s backwards;
     -moz-animation: fadeInBack 3.6s linear 14s backwards;
     -ms-animation: fadeInBack 3.6s linear 14s backwards;
@@ -149,7 +149,51 @@ p.demos {
     -ms-transform: scale(5);
     transform: scale(5);
 }
+.sp-globe-second{
+    position: absolute;
+    color: yellow;
+    width: 270px;
+    height: 273px;
+    left: 50%;
+    top: 50%;
+    margin: -137px 0 0 -141px;
+    //background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+    -webkit-animation: fadeInBack 4s linear 16s backwards;
+    -moz-animation: fadeInBack 4s linear 16s backwards;
+    -ms-animation: fadeInBack 4s linear 16s backwards;
+    animation: fadeInBack 4s linear 16s backwards;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -o-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+}
 
+.sp-globe-third{
+    position: absolute;
+    color: yellow;
+    width: 270px;
+    height: 273px;
+    left: 50%;
+    top: 50%;
+    margin: -137px 0 0 -141px;
+    //background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+    -webkit-animation: fadeInBack 6s linear 18s backwards;
+    -moz-animation: fadeInBack 6s linear 18s backwards;
+    -ms-animation: fadeInBack 6s linear 18s backwards;
+    animation: fadeInBack 6s linear 18s backwards;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -o-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+}
 .sp-circle-link {
     position: absolute;
     left: 50%;
@@ -382,14 +426,12 @@ p.demos {
     }
     .sp-globe {
         width: auto;
+        
     }
-    .sp-container h2 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-left: 2em;
-        //color: red;
-    }
+    //.sp-container h2 {
+
+       
+    //}
     .sp-container h2.frame-4 {
         display: flex;
         font-size: 1em;
@@ -407,5 +449,17 @@ p.demos {
         height: 84px;
         font-size: 22px;
         width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 2em;
+        left: 3em;
+        top: 26%;
+    }
+}
+
+@media screen and ( max-width: 375px){
+    .sp-content h2{
+     left: 12em;   
     }
 }
