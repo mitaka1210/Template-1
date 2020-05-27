@@ -129,7 +129,10 @@ header {
     align-items: center;
     grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax( 1em, 1fr);
 }
-
+.more-stuff-grid h3 {
+    text-align: center;
+    padding-bottom: .5em;
+}
 .from-left {
     grid-column: 2 / 3;
 }
@@ -150,6 +153,9 @@ header {
     background-color: white;
     margin: 5px;
     transition: all .3s ease;
+}
+#text {
+    padding-bottom: .5em;
 }
 
 @media screen and (max-width: 1024px) {
