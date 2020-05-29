@@ -132,6 +132,9 @@ header {
     align-items: center;
     grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax( 1em, 1fr);
 }
+.more-stuff-grid img {
+    border: 6px solid gold;
+}
 .more-stuff-grid h3 {
     text-align: center;
     padding-bottom: .5em;
@@ -224,10 +227,23 @@ header {
 }
 
 @media screen and ( max-width: 768px) {
-    .home-intro {
-        width: 100%;
-        height: auto;
+    
+    //.home-intro {
+    //    width: 100%;
+    //    height: auto;
+    //}
+    .burger{
+        display: none;
     }
+    #pricing {
+        width: 65.8em;
+    }
+    #home-video-bg{
+        width: auto;
+        width: 65.8em;
+        
+    }
+    
 }
 
 @media screen and ( max-width: 500px) {
@@ -265,7 +281,9 @@ header {
         background-color: #1abc9c;
         width: 17em;
     }
-
+    .lang{
+        margin-left: 40em;
+    }
     .burger {
         display: block;
         margin-top: 1em;
@@ -294,16 +312,52 @@ header {
     .more-stuff-grid {
         display: flex;
         flex-direction: column;
+        width: 31em;
     }
     #home-video-bg{
         width: 1200px;
         right: 14em;
     }
 }
-@media screen and ( max-width: 375px){
-  
+@media screen and ( max-width: 425px){
     #home-video-bg{
-        width: 855px;
+        width: 65em;
+        left: 0em;
+        
+    }
+
+    .more-stuff-grid{
+        width: 53em;
+    }
+}
+@media screen and ( max-width: 375px){
+    
+    .lang {
+        margin-left: 88em;
+        margin-top: -2em;
+    }
+
+    .nav__list{
+    
+    font-size: 2em;
+    right: 17em;
+    top: 2.5em;
+
+    }
+    .burger{
+        display: block;
+        margin-top: 3em;
+        margin-left: -13em;
+    }
+    .burger div {
+        width: 3em;
+        height: .3em;
+    }
+    .more-stuff-grid{
+        width: 65.8em;
+    }
+    #home-video-bg{
+        width: 65.8em;
         left: 0;
     }
 }

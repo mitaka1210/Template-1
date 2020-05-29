@@ -87,7 +87,7 @@ p.demos {
 }
 
 .sp-container h2.frame-4 {
-    font-size: 60px;
+    font-size: 30px;
     -webkit-animation-delay: 9s;
     -moz-animation-delay: 9s;
     -ms-animation-delay: 9s;
@@ -131,7 +131,7 @@ p.demos {
     position: absolute;
     color: #fff200;
     width: 270px;
-    height: 273px;
+    height: 188px;
     left: 50%;
     top: 50%;
     margin: -137px 0 0 -141px;
@@ -154,7 +154,7 @@ p.demos {
     color: #7f8c8d;
     font-weight: 900;
     width: 270px;
-    height: 273px;
+    height: 188px;
     left: 50%;
     top: 50%;
     margin: -137px 0 0 -141px;
@@ -177,7 +177,7 @@ p.demos {
     position: absolute;
     color: #f39c12;
     width: 270px;
-    height: 273px;
+    height: 188px;
     left: 50%;
     top: 50%;
     margin: -137px 0 0 -141px;
@@ -416,6 +416,12 @@ p.demos {
     100% {
         opacity: 1;
         transform: scale(1) rotate(0deg);
+    }
+}
+
+@media screen and ( max-width: 768px){
+    .sp-container h2{
+        top: 13%;
     }
 }
 
