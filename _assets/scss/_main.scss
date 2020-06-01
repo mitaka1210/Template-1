@@ -138,6 +138,7 @@ header {
 .more-stuff-grid h3 {
     text-align: center;
     padding-bottom: .5em;
+    border-bottom: 2px solid #333;
 }
 .from-left {
     grid-column: 2 / 3;
@@ -162,6 +163,17 @@ header {
 }
 #text {
     padding-bottom: .5em;
+}
+.work{
+    color: black;
+    font-size: 1.2em;
+    font-style: oblique;
+    font-weight: 900;
+}
+p::first-letter{
+    font-size: 250%;
+    font-weight: 600;
+    color: #fff200;
 }
 
 @media screen and (max-width: 1024px) {

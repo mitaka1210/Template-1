@@ -1,7 +1,8 @@
 //! MAIN
 @import 'main.scss';
 @import 'reset.scss';
-@import 'typography.scss'; //! Specific
+@import 'variables'; //! Specific
+@import 'typography';
 @import 'accordingMenu.scss';
 @import 'logo.scss';
 @import 'product.scss';
