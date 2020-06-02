@@ -22,26 +22,29 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneObserver.observe(sectionOne);
 
 //! Aвтоматично скорлва до страницата
+function readywebsite() {
+    
 
-(document).ready(function() {
-    let docEl = $(document),
-        headerEl = $('header'),
-        headerWrapEl = $('.wrapHead'),
-        navEl = $('nav');
+    (document).ready(function() {
+        let docEl = $(document),
+            headerEl = $('header'),
+            headerWrapEl = $('.wrapHead'),
+            navEl = $('nav');
 
 
-    docEl.on('scroll', function() {
+        docEl.on('scroll', function() {
 
-        if (docEl.scrollTop() > 40) {
-            headerEl.addClass('fixed-to-top');
-            headerWrapEl.addClass('fixed-to-top');
-            navEl.addClass('fixed-to-top');
-        } else {
-            headerEl.removeClass('fixed-to-top');
-            headerWrapEl.removeClass('fixed-to-top');
-            navEl.removeClass('fixed-to-top');
-        }
+            if (docEl.scrollTop() > 40) {
+                headerEl.addClass('fixed-to-top');
+                headerWrapEl.addClass('fixed-to-top');
+                navEl.addClass('fixed-to-top');
+            } else {
+                headerEl.removeClass('fixed-to-top');
+                headerWrapEl.removeClass('fixed-to-top');
+                navEl.removeClass('fixed-to-top');
+            }
+        });
+
+
     });
-
-
-});
+}
