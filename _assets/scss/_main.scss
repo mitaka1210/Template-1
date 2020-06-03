@@ -217,6 +217,8 @@ p::first-letter{
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
 @media screen and (max-width: 1024px) {
     #home-video-bg {
         width: 73.1em;
@@ -260,11 +262,10 @@ p::first-letter{
         display: none;
     }
     #pricing {
-        width: 71.6em;
+        width: 69.6em;
     }
     #home-video-bg{
-        width: auto;
-        width: 71.5em;
+        width: 69.5em;
         
     }
     
@@ -302,7 +303,7 @@ p::first-letter{
     }
     .nav__list a {
         color: #e74c3c;
-        background-color: #1abc9c;
+       
         width: 17em;
     }
     .lang{
@@ -348,14 +349,32 @@ p::first-letter{
     }
 }
 @media screen and ( max-width: 425px){
+    .lang {
+        margin-left: 86em;
+        
+    }
+    .lang a  {
+        font-size: 2em;
+    }
+    .burger {
+        margin-top: 2em;
+        margin-left: -15em;
+    }
     #home-video-bg{
-        width: 65em;
+        width: 71.1em;
         left: 0em;
         
     }
+    .nav__list{
+        right: 35em;
+    }
+    .nav__list a{
+        color: #fff200;
+      
+    }
 
     .more-stuff-grid{
-        width: 65.7em;
+        width: 71.2em;
     }
     .from-right,
     .from-left {
@@ -373,6 +392,32 @@ p::first-letter{
         display: flex;
         flex-direction: column-reverse;
     }
+    #pricing {
+        width: 70.6em;
+    } 
+    #myBtn2 {
+        right: 8em;
+        /* text-align: center; */
+        width: 14%;
+        /* display: flex; */
+        /* justify-content: center; */
+        align-items: center;
+        /* flex-direction: column; */
+        /* left: 10em; */
+        margin-left: 32em;
+        margin-bottom: 2em;
+    }
+    .thr{
+     
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        /* align-content: center; */
+        text-align: center;
+    }
+
+    
 
 
     
@@ -401,16 +446,57 @@ p::first-letter{
         height: .3em;
     }
     .more-stuff-grid{
-        width: 61.21em;
+        width: 89.91em;
     }
     #home-video-bg{
-        width: 61.2em;
+        width:90em;
         
         left: 0;
     }
     #pricing {
         width: 60.6em;
     }
+
+    #myBtn2 {
+        right: 8em;
+        /* text-align: center; */
+        width: 14%;
+        /* display: flex; */
+        /* justify-content: center; */
+        align-items: center;
+        /* flex-direction: column; */
+        /* left: 10em; */
+        margin-left: 43em;
+        margin-bottom: 2em;
+    }
+    .thr{
+     
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        /* align-content: center; */
+        text-align: center;
+    }
    
+    
+}
+
+@media screen and ( max-width: 320px ){
+    .more-stuff-grid {
+        width: 91.21em;
+    }
+    #home-video-bg{
+        width: 91.2em;
+    }
+    .thr{
+     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    text-align: center;
+    }
     
 }

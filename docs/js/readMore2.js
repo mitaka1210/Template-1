@@ -1,16 +1,20 @@
 function myFunctionTwo() {
-    var dots = document.getElementById("dots");
-    var moreText2 = document.getElementById("more2");
-    
-    var btnText = document.getElementById("myBtn2");
-  
+  let dots = document.getElementById("dots");
+  let moreText = document.getElementById("more2");
+  let btnText = document.getElementById("myBtn2");
+  btnText.classList.toggle("mystyle2");
+   
+
+
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more"; 
-      moreText2.style.display = "none";
+      moreText.style.display = "none";
+    
     } else {
       dots.style.display = "none";
       btnText.innerHTML = "Read less"; 
-      moreText2.style.display = "inline";
+      moreText.style.display = "inline";
+      
     }
 }

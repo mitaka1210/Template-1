@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding: 1em;
+    margin: 40px 0;
+    border: none;
+    width: 140px;
+    border-radius: 6px;
+    outline: none;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    background-color: var(--btn--bgr-color);
+    transition: .3s linear;
+}
+.mystyle {
+    background-color: greenyellow;
+}
+.mystyle2 {
+    background-color: red;
+}
+.btn-1:hover{
+    transform: rotateX(35deg);
+    box-shadow: 0 0 15px rgba(240, 0, 0, 1);
+}
