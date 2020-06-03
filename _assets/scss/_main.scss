@@ -84,7 +84,15 @@ header {
 .lang a {
     color:greenyellow;
 }
-
+#more {
+    display: none;
+}
+#more2,
+#more3,
+#more4,
+#more5 {
+    display: none;
+}
 .nav-scrolled {
     --text: #333;
     --text-inverse: #f4f4f4;
