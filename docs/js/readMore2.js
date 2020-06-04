@@ -1,5 +1,5 @@
 function myFunctionTwo() {
-  let dots = document.getElementById("dots");
+  let dots = document.getElementById("dots2");
   let moreText = document.getElementById("more2");
   let btnText = document.getElementById("myBtn2");
   btnText.classList.toggle("mystyle2");

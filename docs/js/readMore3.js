@@ -1,8 +1,10 @@
 function myFunctionThree() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more3");
-    var btnText = document.getElementById("myBtn3");
-  
+    let dots = document.getElementById("dots3");
+    let moreText = document.getElementById("more3");
+    let btnText = document.getElementById("myBtn3");
+
+    btnText.classList.toggle("mystyle2");
+    
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more"; 

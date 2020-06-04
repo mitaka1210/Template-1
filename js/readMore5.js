@@ -1,9 +1,11 @@
 function myFunctionFive() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more5");
-    var btnText = document.getElementById("myBtn5");
-    let btnColor = document.querySelector('button');
-    btnColor.classList.toggle("mystyle2");
+    let dots = document.getElementById("dots5");
+    let moreText = document.getElementById("more5");
+    let btnText = document.getElementById("myBtn5");
+    
+  
+    btnText.classList.toggle("mystyle2");
+
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more"; 

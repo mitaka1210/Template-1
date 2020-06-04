@@ -1,9 +1,9 @@
 function myFunctionFour() {
-    var dots = document.getElementById("dots");
+    var dots = document.getElementById("dots4");
     var moreText = document.getElementById("more4");
     var btnText = document.getElementById("myBtn4");
-    //let btnColor = document.querySelector('button');
-    //btnColor.classList.toggle("mystyle2");
+    
+    btnText.classList.toggle("mystyle2");
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more"; 
