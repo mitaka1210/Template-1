@@ -371,11 +371,14 @@
     <script src="./js/readMore4.js"></script>
     <script src="./js/readMore5.js"></script>
     <script>
-      history.scrollRestoration = "manual";
+      function topScroll() {
+        history.scrollRestoration = "manual";
     
-      $(window).on('beforeunload', function() {
-          $(window).scrollTop(0);
-      });
+    (window).on('beforeunload', function() {
+        $(window).scrollTop(0);
+    });
+      }
+     
     </script>
 </body>
 

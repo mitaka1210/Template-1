@@ -371,11 +371,18 @@ p::first-letter{
         
     }
     .nav__list{
-        right: 35em;
+        right: 48em;
+        
     }
+    //@supports (-moz-appearance:none) {
+    //    .nav__list a{
+    //        color: red;
+    //        font-size: 1.5em;
+    //    }
+    //}
     .nav__list a{
         color: #fff200;
-      
+        font-size: 1.5em;
     }
 
     .more-stuff-grid{
@@ -458,6 +465,7 @@ p::first-letter{
         
         left: 0;
     }
+    
     #pricing {
         width: 60.6em;
     }
