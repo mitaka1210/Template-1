@@ -135,7 +135,7 @@ p.demos {
     width: 270px;
     height: 188px;
     left: 50%;
-    top: 50%;
+    top: 46%;
     margin: -137px 0 0 -141px;
     //background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
     -webkit-animation: fadeInBack 3.6s linear 9.5s backwards;
@@ -158,7 +158,7 @@ p.demos {
     width: 270px;
     height: 188px;
     left: 50%;
-    top: 50%;
+    top: 46%;
     margin: -137px 0 0 -141px;
     //background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
     -webkit-animation: fadeInBack 4s linear 11s backwards;
@@ -181,7 +181,7 @@ p.demos {
     width: 270px;
     height: 188px;
     left: 50%;
-    top: 50%;
+    top: 46%;
     margin: -137px 0 0 -141px;
     //background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
     -webkit-animation: fadeInBack 6s linear 12s backwards;
@@ -442,10 +442,11 @@ p.demos {
         width: auto;
         
     }
-    //.sp-container h2 {
-
-       
-    //}
+    @supports (-moz-appearance:none) {
+       .sp-container h2.frame-1{
+           margin-left: -1.5em;
+       } 
+    } 
     .sp-container h2.frame-4 {
         display: flex;
         font-size: 1em;

@@ -20,7 +20,6 @@ const sectionOneObserver = new IntersectionObserver(function(
     sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
-
 //! Aвтоматично скорлва до страницата
 function readywebsite() {
     

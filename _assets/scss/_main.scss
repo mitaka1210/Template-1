@@ -268,6 +268,11 @@ p::first-letter{
         width: 69.5em;
         
     }
+    @supports (-moz-appearance:none) {
+        #home-video-bg{
+           
+        }
+    }
     
 }
 

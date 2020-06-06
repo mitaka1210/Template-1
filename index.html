@@ -8,7 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./docs/css/style.css">
-
+    <!--<script>
+      function reload() {
+        window.onbeforeunload = function () {
+         window.scrollTo(0, 0);
+      }
+      }
+    </script>-->
     <title>Document</title>
     <!--<link rel="stylesheet" href="css/accordingMenu.css" />-->
 </head>
@@ -28,13 +34,13 @@
                     <li class="nav__list-item">
                         <a href="#технология" class="scroll nav__link">Технология</a>
                     </li>
-                    <li class="nav__list-item">
+                    <!--<li class="nav__list-item">
                     <a href=#" class="section4 nav__link ">Видео</a>
-                </li>
+                </li>-->
                     <li class="nav__list-item ">
                         <a href="#обучение" class="scroll nav__link ">Обучение</a>
                     </li>
-                    <li class="nav__list-item "><a href="#blog" class="scroll nav__link ">Контакти</a></li>
+                    <li class="nav__list-item "><a href="#contact" class="scroll nav__link ">Контакти</a></li>
                 </ul>
 
                 <div class="burger ">
@@ -48,7 +54,7 @@
         </div>
         <div class="lang">
 
-            <a href="./eng.html" onclick="setLanguage('en')">English</a> 
+            <a href="./tr.html" onclick="setLanguage('tr')">Turkish</a> 
         </div>
     </header>
 
@@ -81,12 +87,13 @@
             </section>
                 
             <section id="pricing">
-            
+              <div id="продукт"></div>
                 <div class="home-more-stuff ">
+                  
                     <div class="more-stuff-grid ">
                     
                         <img src="https://unsplash.it/400 " alt=" " class="slide-in from-left " />
-                        <div id="продукт" class="thr">
+                        <div class="thr">
                             <h3>Продукт</h3>
                         
                             <p class="slide-in from-right ">
@@ -109,14 +116,15 @@
                     </div>
                 
                         
-                    <div class="more-stuff-grid ">
-                        <div id="технология" class="thr slide-in from-left">
-
+                    <div id="технология" class="more-stuff-grid ">
+                      
+                        <div  class="thr slide-in from-left">
+                          
                             <h3 class="slide-in from-left">Технология</h3>
                             <p class="slide-in from-left ">
                                                         
                               <br>
-                              Инструмент с който Римляните и нашите пра-деди са намирали злати жили.Технологията на настройка и процеса на работа ограничават ползването на прибора максимум до 15 дни в месеца. Също така и про лошо метереологично време не може да бъде използван.<span id="dots2">...</span><span id="more2">
+                              Инструмент с който Римляните и нашите пра-деди са намирали злати жили.Технологията на настройка и процеса на работа ограничават ползването на прибора максимум до 15 дни в месеца. Също така и при лошо метереологично време не може да бъде използван.<span id="dots2">...</span><span id="more2">
                               <br> 
                               След  значително натрупване на опит то стана очевидно за нас. Чрез натрупания от нас опит успяхме да усъвършенстваме прибор с което синтезирахме нещо ново, което работи.  Изработеният от нас прибор е с безупречна дискриминация на: злато , сребро , мед.Ви не може да засечете нищо друго освен този метал който прибора.
                               </span>
@@ -128,10 +136,12 @@
                         
                     </div>
                 
-
+                    <div  id="обучение" ></div>
+                    <br>
+                    <br>
                     <div class="more-stuff-grid reversed ">
                         <img src="./img/10128583-gold-coins-of-one-euro-background-isolated-on-white.jpg" alt=" " class="slide-in from-left " />
-                        <div id="обучение" class="thr">
+                        <div  class="thr">
                             <h3>Обучение</h3>
                         
                             <p class="slide-in from-right">
@@ -188,27 +198,7 @@
                         </div>
                     </div>
 
-                    <!--<div class="more-stuff-grid ">
-                        <h3 class="slide-in from-left">BRR</h3>
-                        <p class="slide-in from-left ">
-                            Първа стъпка:Демонстрираме Ви възможностите на уреда.Втора стъпка: Сключваме договор за покупка и обучение.Трета стъпка:Пристъпваме към обучение. Продължителността на обучението е между 3 дни и 15 дни. Тя се определя от физическите възможности на човек. Обучението се провежда в график предоставен от нас и разбира се съгласуван с Вас.
-                        </p>
-                        <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
-                    </div>
-                    <div class="more-stuff-grid ">
-                        <img src="//unsplash.it/400 " alt=" " class="slide-in from-left " />
-                        <p class="slide-in from-right ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                            cupiditate debitis facilis quibusdam magni. Eveniet.
-                        </p>
-                    </div>
-                    <div class="more-stuff-grid ">
-                        <p class="slide-in from-left ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
-                            cupiditate debitis facilis quibusdam magni. Eveniet.
-                        </p>
-                        <img src="https://unsplash.it/401 " alt=" " class="slide-in from-right " />
-                    </div>-->
+               
                 </div>
             </section>
 
@@ -260,7 +250,7 @@
 
 <!--TODO FOOTER ==============================================================-->
 
-    <div class="footer-menu-contact7">
+    <div id="contact" class="footer-menu-contact7">
       <h2 class="footer-menu-menu-name"> Връзка с Нас: </h2>
       <ul id="menu-get-started" class="footer-menu-list">
         <li class="menu-item menu-item-type-post_type menu-item-object-product"><span>
@@ -287,11 +277,7 @@
          <a href="mailto:foo@bar.com?Subject=upport">kontofiscal@b-trust.org</a>
         </li>
       </ul>
-      <div class="money">
-        <div class="right-photo">
-            <img src="./img/21125309-a-handful-of-coins-in-the-palm-of-hands.jpg" alt="">
-        </div>
-      </div>
+
     </div>
 
 
@@ -338,16 +324,16 @@
     
   </div>
 </div>
-    <script>
-      function docreadyForStart() {
-        history.scrollRestoration = "manual";
 
-        (window).on('beforeunload', function() {
-            (window).scrollTop(0);
-        });
-      }
+    <!--<script>
+      function docreadyForStart() {
+        $(window).on('beforeunload', function() {
+        $('body').hide();
+        $(window).scrollTop(0);
+      });
+    }
         
-    </script>
+    </script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       function languageChange() {
@@ -372,7 +358,13 @@
     <script src="./js/readMore3.js"></script>
     <script src="./js/readMore4.js"></script>
     <script src="./js/readMore5.js"></script>
-
+    <script>
+      history.scrollRestoration = "manual";
+    
+      $(window).on('beforeunload', function() {
+          $(window).scrollTop(0);
+      });
+    </script>
 </body>
 
 </html>

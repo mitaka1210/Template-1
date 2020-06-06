@@ -45,23 +45,23 @@
     //}
     .footer-menu-contact7 {
         margin-top: 30px;
-        margin-left: 2em;
+        margin-left: 12em;
         display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 50em;
+        justify-content: center;
+        flex-direction: column;
+        width: 50em;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
     }
     
     .footer-menu-menu-name  {
         color: #fffff2;
-        font-size: 15px;
-        font-weight: 900;
         letter-spacing: .1em;
         line-height: 18px;
-        margin-bottom: 0;
-        flex: none;
-        margin-top: 0;
+        margin-bottom: 0em;
         text-transform: uppercase;
+            
     }
     .footer-menu-list {
         list-style: none;
@@ -83,15 +83,7 @@
         width: 16em;
         height: auto;
     }
-    .right-photo img {
-        width: 27em;
-        margin-bottom: 2em;
-        height: 21em;
-        padding: .5em;
-        border-radius: 2px solid #333;
-        border: 5px solid #222;
-        border-radius: 2em;
-    }
+    
     .email-1 {
         padding-top: 2em;
     }
@@ -102,60 +94,7 @@
         color: darkturquoise;
     }
     
-    //.footer-call-to-action-description {
-    //    color: #fffff2;
-    //    margin-top: 10px;
-    //    margin-bottom: 20px;
-    //}
-    //.footer-call-to-action-button:hover {
-    //    background-color: #fffff2;
-    //    color: #00bef0;
-    //}
-    //.button:last-of-type {
-    //    margin-right: 0;
-    //}
-    //.footer-call-to-action-button {
-    //    background-color: #027b9a;
-    //    border-radius: 21px;
-    //    color: #fffff2;
-    //    display: inline-block;
-    //    font-size: 11px;
-    //    font-weight: 900;
-    //    letter-spacing: .1em;
-    //    line-height: 18px;
-    //    padding: 12px 30px;
-    //    margin: 0 10px 10px 0;
-    //    text-decoration: none;
-    //    text-transform: uppercase;
-    //    transition: background-color .2s;
-    //    cursor: pointer;
-    //    position: relative;
-    //}
-    //.footer-call-to-action {
-    //    margin-top: 30px;
-    //}
-    //.footer-call-to-action-title {
-    //    color: #fffff2;
-    //    font-size: 14px;
-    //    font-weight: 900;
-    //    letter-spacing: .1em;
-    //    line-height: 18px;
-    //    margin-bottom: 0;
-    //    margin-top: 0;
-    //    text-transform: uppercase;
-    //}
-    //.footer-call-to-action-link-wrapper {
-    //    margin-bottom: 0;
-    //    margin-top: 10px;
-    //    color: #fff;
-    //    text-decoration: none;
-    //}
-    //.footer-call-to-action-link-wrapper a {
-    //    color: #fff;
-    //    text-decoration: none;
-    //}
-    
-    
+  
     
     
     
@@ -165,7 +104,7 @@
         position: absolute;
         right: 0;
         width: 236px;
-        margin-top: 1em;
+        margin-top: .6em;
         box-sizing: content-box;
     }
     
@@ -244,10 +183,10 @@
     }
     
     .footer-copyright {
-        background-color: red;
+    
         color: #fff;
         margin-top: 4.0em;
-        height: 3.5em;
+        height: 4.5em;
         width: 75.6em;
         padding-left: -4em;
         margin-left: -4em;
@@ -319,8 +258,15 @@
     @media (min-width:1281px) { /* hi-res laptops and desktops */
         .footer-copyright{
             background-color: green;
-            width: 75.6em;
+            width: 84.5em;
             
+        }
+        @supports (-moz-appearance:none) {
+            .footer-copyright{
+                background-color: green;
+                width: 84.6em;
+                
+            }
         }
         .footer-copyright-text{
             padding-top: 1.5em;
@@ -340,14 +286,7 @@
         
 
     }
-    @media screen and ( max-height: 768px){
-        .site-footer{
-            
-            //width:auto;
-        }
-        
-        
-    }
+   
     @media screen and ( max-width: 768px){
         
         .site-footer{
@@ -416,6 +355,7 @@
             height: 4em;
             margin-top: 6em;
         }
+        
     }
     @media screen and ( max-width: 500px){
         .footer {
@@ -426,6 +366,16 @@
             flex-direction: column;
             align-items: center;
             width: 31em;
+        }
+        @supports (-moz-appearance:none) {
+            .footer-menu-contact7{
+                margin-left: 4em;
+            } 
+        }
+        @supports (-moz-appearance:none) {
+            .footer-social-links {
+                width: 247px;
+            } 
         }
         .footer-copyright{
             width: 43.9em;
