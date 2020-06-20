@@ -14,7 +14,7 @@ function myFunction() {
     
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
+      btnText.innerHTML = "az oku"; 
       
       moreText.style.display = "inline";
       
